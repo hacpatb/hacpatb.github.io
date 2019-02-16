@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     margin: 22px 0;
     flex: 1 0 auto;
+    max-height: 80px;
 }
 
 #phone {
@@ -31,9 +32,12 @@ body {
 }
 
 /*menu*/
+
 #nav {
     flex: 1 0 auto;
+    max-height: 50px;
 }
+
 ul {
     margin: 0;
     padding: 0;
