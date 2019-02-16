@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/powerange/powerange.min.css" rel="stylesheet">
+    <link href="css/jqueryUI/jquery-ui.min.css" rel="stylesheet">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html" title="World bank"><img src="img/logo.png" alt="World bank"></a>
+            </div>
+            <div id="phone">
+                <span>8-800-100-5005</span>
+                <br>
+                <span>+7 (3452) 522-000 </span>
+            </div>
+        </div>
+        <div id="nav">
+            <ul class="menu">
+                <li><a href="#">Кредитные карты</a></li>
+                <li><a href="#" class="active">Вклады</a></li>
+                <li><a href="#">Дебетовая карта</a></li>
+                <li><a href="#">Страхование</a></li>
+                <li><a href="#">Друзья</a></li>
+                <li><a href="#">Интернет-банк</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Вклады</a></li>
+                <li class="active">Калкьулятор</li>
+            </ul>
+
+            <div class="calc">
+                <form action="calc.php" id="form-calc">
+                    <table class="table-calc">
+                        <tr class="form-table-head">
+                            <td colspan="2">Калкьулятор</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="form-table-lable">Дата оформления вклада</td>
+                            <td class="form-table-input"><input type="text" name="date" id="date"> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="form-table-lable">Сумма вклада</td>
+                            <td class="form-table-input"><input name="sum" id="sum" type="text" value="1 000 000"
+                                    pattern="^[0-9\s]+$"> </td>
+                            <td><input type="text" class="sum-range"></td>
+                        </tr>
+                        <tr>
+                            <td class="form-table-lable">Срок вклада</td>
+                            <td class="form-table-input"><select name="term">
+                                    <option value="12" selected>1 год</option>
+                                    <option value="24">2 года</option>
+                                    <option value="36">3 года</option>
+                                    <option value="48">4 года</option>
+                                    <option value="60">5 лет</option>
+                                </select></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="form-table-lable">Пополнение вклада</td>
+                            <td class="form-table-input"><label><input type="radio" name="refill" value="no"
+                                        checked="1">
+                                    Нет </label>
+                                <label><input type="radio" name="refill" value="yes"> Да </label></td>
+                            <td></td>
+                        </tr>
+                        <tr class="table-refill-sum">
+                            <td class="form-table-lable">Сумма пополнения вклада</td>
+                            <td class="form-table-input"><input name="refill-sum" id="refill-sum" type="text"
+                                    value="1 000" pattern="^[0-9\s]+$">
+                            <td><input type="text" class="refill-sum-range"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Расчитать" class="btn">
+                                <div class="form-table-result">Результат: <span id="result">0 руб</span> </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+        <div id="footer">
+            <div id="nav">
+                <ul class="menu-footer">
+                    <li><a href="#">Кредитные карты</a></li>
+                    <li><a href="#">Вклады</a></li>
+                    <li><a href="#">Дебетовая карта</a></li>
+                    <li><a href="#">Страхование</a></li>
+                    <li><a href="#">Друзья</a></li>
+                    <li><a href="#">Интернет-банк</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/powerange/powerange.min.js"></script>
+<script src="js/jqueryUI/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
