@@ -55,7 +55,6 @@ $(function () {
         }
         $(this).val(newVal);
     });
-
 });
 
 $('#form-calc').submit(function (e) {
